@@ -9,6 +9,6 @@ Qt Widgets 学习代码
 
 关键词： QSerialPort
 
-博客地址：https://blog.csdn.net/qq_16504163/article/details/119318325
+博客地址：https://blog.csdn.net/qq_16504163/article/details/119395864
 
 ==========================================================================

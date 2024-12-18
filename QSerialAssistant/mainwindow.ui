@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>472</width>
-    <height>373</height>
+    <width>737</width>
+    <height>662</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,9 +20,9 @@
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>40</y>
-      <width>141</width>
+      <x>390</x>
+      <y>140</y>
+      <width>253</width>
       <height>231</height>
      </rect>
     </property>
@@ -207,10 +207,10 @@
    <widget class="QPushButton" name="pushButton_send">
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>290</y>
-      <width>141</width>
-      <height>23</height>
+      <x>390</x>
+      <y>380</y>
+      <width>221</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="font">
@@ -231,10 +231,10 @@
    <widget class="QPushButton" name="pushButton_clearSend">
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>320</y>
-      <width>141</width>
-      <height>23</height>
+      <x>390</x>
+      <y>500</y>
+      <width>171</width>
+      <height>71</height>
      </rect>
     </property>
     <property name="font">
@@ -255,8 +255,8 @@
    <widget class="Line" name="line">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>270</y>
+      <x>20</x>
+      <y>440</y>
       <width>461</width>
       <height>16</height>
      </rect>
@@ -271,8 +271,8 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>10</y>
+      <x>390</x>
+      <y>50</y>
       <width>139</width>
       <height>23</height>
      </rect>
@@ -289,20 +289,20 @@
    <widget class="QTextEdit" name="textEdit_rcv">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>311</width>
-      <height>261</height>
+      <x>20</x>
+      <y>20</y>
+      <width>341</width>
+      <height>401</height>
      </rect>
     </property>
    </widget>
    <widget class="QTextEdit" name="textEdit_send">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>290</y>
-      <width>311</width>
-      <height>61</height>
+      <x>20</x>
+      <y>470</y>
+      <width>341</width>
+      <height>121</height>
      </rect>
     </property>
    </widget>
@@ -319,7 +319,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>472</width>
+     <width>737</width>
      <height>23</height>
     </rect>
    </property>

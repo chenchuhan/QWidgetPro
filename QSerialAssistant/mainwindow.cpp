@@ -71,6 +71,17 @@ void MainWindow:: updataPortNum(void) {
     }
 }
 
+QString MainWindow::byteArrayToHexStr(const QByteArray &data)
+{
+    QString temp = "";
+    QString hex = data.toHex();
+    for (int i = 0; i < hex.length(); i = i + 2) {
+        temp += hex.mid(i, 2) + " ";
+    }
+
+    return temp.trimmed().toUpper();
+}
+
 //
 void MainWindow::serial_readyRead()
 {
@@ -80,8 +91,11 @@ void MainWindow::serial_readyRead()
     //从接收缓冲区中读取数据
     QByteArray buffer = serial->readAll();
 
+    //hex 显示
+    QString str = byteArrayToHexStr(buffer);
+
     //界面中读取的数据中加入刚读取的数据
-    recv += QString(buffer);
+    recv += QString(str);
 
     //清除显示
     ui->textEdit_rcv->clear();
@@ -138,9 +152,13 @@ void MainWindow::on_pushButton_operate_clicked()
             configSetEnable(true);
         }
         else {
-            qDebug()<< QString("The serial port is open: ") <<portnameStr;
+            qDebug()<< QString("The serial port is open1: %1").arg(portnameStr);
+            qDebug()<< QString("The serial port is open2: %1").arg(serial->portName());
             configSetEnable(false);
         }
+
+        qDebug()<< QString("isOpen:%1").arg(serial->isOpen());
+
     }
     else {
          ui->pushButton_operate->setText("OPEN");

@@ -18,7 +18,7 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-
+    QString byteArrayToHexStr(const QByteArray &data);
     void configSetEnable(bool b);
     void initConfig();
 
